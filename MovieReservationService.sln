@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationService.App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationService.Infrastructure", "TestCleanArchitecture.Infrastructure\MovieReservationService.Infrastructure.csproj", "{762E19FB-847C-4290-9520-FFAEEC0628EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationService.Presentation", "TestCleanArchitecture.Presentation\MovieReservationService.Presentation.csproj", "{FD50CD1E-7345-4D4B-8D79-87EEF37ED671}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationService.UnitTests", "TestCleanArchitecture.UnitTests\MovieReservationService.UnitTests.csproj", "{F0D68B70-74A6-488A-B39F-2A2500E9DD5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationService.Api", "MovieReservationService.Api\MovieReservationService.Api.csproj", "{DCAA3A4F-E4A2-4063-9CD5-4D46C323F94C}"
@@ -33,10 +31,6 @@ Global
 		{762E19FB-847C-4290-9520-FFAEEC0628EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{762E19FB-847C-4290-9520-FFAEEC0628EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{762E19FB-847C-4290-9520-FFAEEC0628EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD50CD1E-7345-4D4B-8D79-87EEF37ED671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD50CD1E-7345-4D4B-8D79-87EEF37ED671}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD50CD1E-7345-4D4B-8D79-87EEF37ED671}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD50CD1E-7345-4D4B-8D79-87EEF37ED671}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F0D68B70-74A6-488A-B39F-2A2500E9DD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0D68B70-74A6-488A-B39F-2A2500E9DD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0D68B70-74A6-488A-B39F-2A2500E9DD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU

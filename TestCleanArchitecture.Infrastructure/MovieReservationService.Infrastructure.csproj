@@ -7,14 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestCleanArchitecture.Application\MovieReservationService.Application.csproj" />
-    <ProjectReference Include="..\TestCleanArchitecture.Domain\MovieReservationService.Domain.csproj" />
+    <Compile Remove="External\**" />
+    <Compile Remove="Repositories\**" />
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="External\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="External\**" />
+    <None Remove="Repositories\**" />
+    <None Remove="Services\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="External\" />
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\TestCleanArchitecture.Application\MovieReservationService.Application.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Domain\MovieReservationService.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

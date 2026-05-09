@@ -1,6 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieReservationService.Domain.Contracts.Infrastructure;
-using MovieReservationService.Infrastructure;
 using MovieReservationService.Infrastructure.Persistence;
 
 public class Startup

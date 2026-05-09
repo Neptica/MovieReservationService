@@ -20,7 +20,6 @@
     <ProjectReference Include="..\TestCleanArchitecture.Application\MovieReservationService.Application.csproj" />
     <ProjectReference Include="..\TestCleanArchitecture.Domain\MovieReservationService.Domain.csproj" />
     <ProjectReference Include="..\TestCleanArchitecture.Infrastructure\MovieReservationService.Infrastructure.csproj" />
-    <ProjectReference Include="..\TestCleanArchitecture.Presentation\MovieReservationService.Presentation.csproj" />
   </ItemGroup>
 
   <ItemGroup>
