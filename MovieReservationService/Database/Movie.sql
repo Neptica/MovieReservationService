@@ -1,0 +1,10 @@
+CREATE TABLE Movie (
+	Id INT PRIMARY KEY,
+	[Name] varchar(255) NOT NULL,
+	[Length] INT NOT NULL,
+	RatedId INT NOT NULL,
+		CONSTRAINT fk_Rated
+		FOREIGN KEY (RatedId)
+		REFERENCES Rated(Id),
+	ReleaseDate TIMESTAMP NOT NULL
+)
