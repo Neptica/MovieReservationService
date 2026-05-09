@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TestCleanArchitecture.Application.UseCases;
+using MovieReservationService.Application.UseCases;
 
-namespace TestCleanArchitecture.Presentation.Controllers
+namespace MovieReservationService.Presentation.Controllers
 {
     public class HomeController : Controller
     {

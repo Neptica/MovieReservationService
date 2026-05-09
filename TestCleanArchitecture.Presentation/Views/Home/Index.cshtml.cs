@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace TestCleanArchitecture.Presentation.Pages
+namespace MovieReservationService.Presentation.Views.Home
 {
     public class IndexModel : PageModel
     {

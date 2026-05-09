@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestCleanArchitecture.Domain.Entities;
-using TestCleanArchitecture.Infrastructure.Persistence.Configuration;
+using MovieReservationService.Domain.Entities;
+using MovieReservationService.Infrastructure.Persistence.Configuration;
 
-namespace TestCleanArchitecture.Infrastructure.Persistence
+namespace MovieReservationService.Infrastructure.Persistence
 {
     public class AppDbContext : DbContext
     {

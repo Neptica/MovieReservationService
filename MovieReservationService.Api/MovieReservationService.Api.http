@@ -1,0 +1,6 @@
+@MovieReservationService.Api_HostAddress = http://localhost:5222
+
+GET {{MovieReservationService.Api_HostAddress}}/api/getall
+Accept: application/json
+
+###

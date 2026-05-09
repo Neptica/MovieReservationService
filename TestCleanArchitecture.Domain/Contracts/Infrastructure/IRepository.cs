@@ -4,9 +4,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using TestCleanArchitecture.Domain.Entities.Base;
+using MovieReservationService.Domain.Entities.Base;
 
-namespace TestCleanArchitecture.Domain.Contracts.Infrastructure
+namespace MovieReservationService.Domain.Contracts.Infrastructure
 {
     public interface IRepository<TEntity> where TEntity : class, IEntity
     {

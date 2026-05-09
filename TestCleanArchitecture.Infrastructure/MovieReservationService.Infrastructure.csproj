@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestCleanArchitecture.Application\TestCleanArchitecture.Application.csproj" />
-    <ProjectReference Include="..\TestCleanArchitecture.Domain\TestCleanArchitecture.Domain.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Application\MovieReservationService.Application.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Domain\MovieReservationService.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace TestCleanArchitecture.Application
+﻿namespace MovieReservationService.Application
 {
     public class Class1
     {

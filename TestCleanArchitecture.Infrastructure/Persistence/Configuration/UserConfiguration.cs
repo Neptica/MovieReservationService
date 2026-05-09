@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestCleanArchitecture.Domain.Entities;
+using MovieReservationService.Domain.Entities;
 
-namespace TestCleanArchitecture.Infrastructure.Persistence.Configuration
+namespace MovieReservationService.Infrastructure.Persistence.Configuration
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {

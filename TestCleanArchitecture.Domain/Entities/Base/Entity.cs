@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestCleanArchitecture.Domain.Entities.Base
+namespace MovieReservationService.Domain.Entities.Base
 {
     public class Entity : IEntity
     {

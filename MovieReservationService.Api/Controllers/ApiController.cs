@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MovieReservationService.Application.UseCases;
 using Microsoft.AspNetCore.Authorization;
+using MovieReservationService.Infrastructure.Persistence;
 
-namespace MovieReservationService.Presentation.Controllers
+namespace MovieReservationService.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class ApiController : Controller
     {
-        private readonly UserService _userService;
-        public ApiController(UserService userService)
+        private readonly AppDbContext _dbContext;
+        public ApiController(AppDbContext dbContext)
         {
-            _userService = userService;
+            _dbContext = dbContext;
         }
 
         [Route("getall")]
@@ -20,7 +20,7 @@ namespace MovieReservationService.Presentation.Controllers
             if (Request.Headers.TryGetValue("Authorization", out var jwtToken)) {
                 Console.WriteLine(jwtToken);
             }
-            var test = _userService.GetAll().ToList();
+            var test = _dbContext.Users.Take(20).ToList();
             return Json(test);
         }
 
@@ -31,7 +31,7 @@ namespace MovieReservationService.Presentation.Controllers
             if (Request.Headers.TryGetValue("Authorization", out var jwtToken)) {
                 Console.WriteLine(jwtToken);
             }
-            var test = _userService.GetAll().ToList();
+            var test = _dbContext.Users.Take(20).ToList();
             return Json(test);
         }
 
@@ -42,7 +42,7 @@ namespace MovieReservationService.Presentation.Controllers
             if (Request.Headers.TryGetValue("Authorization", out var jwtToken)) {
                 Console.WriteLine(jwtToken);
             }
-            var test = _userService.GetAll().ToList();
+            var test = _dbContext.Users.Take(20).ToList();
             return Json(test);
         }
     }

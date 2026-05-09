@@ -1,10 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieReservationService.Application.UseCases;
 using MovieReservationService.Domain.Contracts.Infrastructure;
 using MovieReservationService.Infrastructure;
 using MovieReservationService.Infrastructure.Persistence;
-using Auth0.AspNetCore.Authentication.Api;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 public class Startup
 {
@@ -18,8 +15,6 @@ public class Startup
     {
         services.AddControllersWithViews();
         services.AddHttpContextAccessor();
-        services.AddTransient<UserService>();
-        services.AddTransient<IUnitOfWork, UnitOfWork>();
 
         services.AddCors(options =>
         {
@@ -29,21 +24,21 @@ public class Startup
             });
         });
 
-        services.AddAuth0ApiAuthentication(options =>
-        {
-            options.Domain = _configuration["Auth0:Domain"];
-            options.JwtBearerOptions = new JwtBearerOptions
-            {
-                //Authority = _configuration["Auth0:Issuer"],
-                Audience = _configuration["Auth0:Audience"]
-            };
-        });
+        //services.AddAuth0ApiAuthentication(options =>
+        //{
+        //    options.Domain = _configuration["Auth0:Domain"];
+        //    options.JwtBearerOptions = new JwtBearerOptions
+        //    {
+        //        //Authority = _configuration["Auth0:Issuer"],
+        //        Audience = _configuration["Auth0:Audience"]
+        //    };
+        //});
 
-        services.AddAuthorization(options =>
-        {
-            options.AddPolicy("read:epsteinfiles", policy => policy.RequireClaim("permissions", "read:epsteinfiles"));
-            options.AddPolicy("read:unredactedfiles", policy => policy.RequireClaim("permissions", "read:unredactedfiles"));
-        });
+        //services.AddAuthorization(options =>
+        //{
+        //    options.AddPolicy("read:epsteinfiles", policy => policy.RequireClaim("permissions", "read:epsteinfiles"));
+        //    options.AddPolicy("read:unredactedfiles", policy => policy.RequireClaim("permissions", "read:unredactedfiles"));
+        //});
 
         //services.AddUseCaseCollection();
         //services.AddDataContextCollection();

@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestCleanArchitecture.Domain\TestCleanArchitecture.Domain.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Domain\MovieReservationService.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Interfaces\" />
+    <Folder Include="UseCases\" />
     <Folder Include="Validators\" />
     <Folder Include="DTOs\" />
   </ItemGroup>

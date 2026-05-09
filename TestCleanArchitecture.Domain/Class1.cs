@@ -1,4 +1,4 @@
-﻿namespace TestCleanArchitecture.Domain
+﻿namespace MovieReservationService.Domain
 {
     public class Class1
     {

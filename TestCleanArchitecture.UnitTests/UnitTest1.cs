@@ -1,4 +1,4 @@
-namespace TestCleanArchitecture.UnitTests
+namespace MovieReservationService.UnitTests
 {
     public class UnitTest1
     {

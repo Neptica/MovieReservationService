@@ -17,10 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestCleanArchitecture.Application\TestCleanArchitecture.Application.csproj" />
-    <ProjectReference Include="..\TestCleanArchitecture.Domain\TestCleanArchitecture.Domain.csproj" />
-    <ProjectReference Include="..\TestCleanArchitecture.Infrastructure\TestCleanArchitecture.Infrastructure.csproj" />
-    <ProjectReference Include="..\TestCleanArchitecture.Presentation\TestCleanArchitecture.Presentation.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Application\MovieReservationService.Application.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Domain\MovieReservationService.Domain.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Infrastructure\MovieReservationService.Infrastructure.csproj" />
+    <ProjectReference Include="..\TestCleanArchitecture.Presentation\MovieReservationService.Presentation.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestCleanArchitecture.Domain.Entities.Base;
+using MovieReservationService.Domain.Entities.Base;
 
-namespace TestCleanArchitecture.Domain.Contracts.Infrastructure
+namespace MovieReservationService.Domain.Contracts.Infrastructure
 {
     public interface IUnitOfWork
     {
